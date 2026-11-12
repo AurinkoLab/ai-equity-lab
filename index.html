@@ -1,20 +1,642 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="STEM Without Barriers: visual-first AI and robotics learning for deaf and hard-of-hearing children in Espoo, Finland.">
-<title>STEM Without Barriers | AI & Robotics for Every Learner</title>
-<style>
-:root{--ink:#19352d;--green:#245741;--paper:#faf9f3;--lime:#d6f28b;--muted:#52635c;--line:#d7ded1}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}a{color:inherit;text-underline-offset:4px}a:focus-visible,summary:focus-visible{outline:3px solid #8b3bb9;outline-offset:6px}.skip{position:absolute;top:-100px;left:20px;background:white;padding:12px;z-index:10}.skip:focus{top:12px}.wrap{max-width:1180px;margin:auto;padding:0 32px}header{border-bottom:1px solid var(--line)}.nav{min-height:96px;display:flex;justify-content:space-between;align-items:center;gap:25px}.brand{text-decoration:none;font-weight:800;line-height:1.2;font-size:19px;display:flex;align-items:center;gap:12px}.mark{background:var(--green);color:var(--lime);padding:10px 13px;border-radius:13px;font-size:24px}nav{display:flex;gap:26px;align-items:center;font-size:14px}nav a{text-decoration:none}.button{display:inline-block;background:var(--green);color:white;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px}.button.light{background:var(--lime);color:var(--ink)}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:60px;align-items:center;padding-top:72px;padding-bottom:70px}h1{font-size:clamp(44px,5.6vw,76px);line-height:1.06;letter-spacing:-3px;margin:20px 0 24px}h1 em{font-style:normal;color:var(--green)}.intro{font-size:19px;max-width:530px;color:var(--muted)}.actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:28px}.small{font-size:13px;color:var(--muted)}.art{background:#e9ecde;border-radius:100px 20px 20px 20px;position:relative;padding:30px 16px 10px}.art svg{width:100%;height:auto;display:block}.art-label{position:absolute;top:24px;right:20px;font-size:12px;background:white;padding:7px 14px;border-radius:30px;font-weight:700}.art-foot{display:flex;justify-content:space-between;padding:0 15px 20px;font-size:12px;font-weight:700}.facts{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);gap:20px}.facts div{padding-left:24px;border-left:1px solid var(--line)}.facts div:first-child{border:0;padding-left:0}.facts b{display:block;font-size:18px}.facts span{font-size:13px;color:var(--muted)}section.block{padding:76px 0}h2{font-size:clamp(30px,3.5vw,44px);line-height:1.15;letter-spacing:-1.3px;margin:12px 0 20px}h3{font-size:20px;line-height:1.3;margin:14px 0 10px}p{margin:0 0 16px}.lead{max-width:660px;color:var(--muted);font-size:17px}.access-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:36px}.access{border-top:2px solid var(--green);padding-top:18px}.tag{display:inline-block;border:1px solid #b8c5ae;border-radius:30px;padding:4px 12px;font-size:12px;font-weight:700}.tinted{background:#eef0e6}.session-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.session{padding:28px;background:var(--paper);border:1px solid var(--line);border-radius:12px}.number{font-size:13px;font-weight:700;color:var(--green);background:#e4edcf;padding:7px 10px;border-radius:7px}.session p,.access p{font-size:15px;color:var(--muted)}.impact{display:grid;grid-template-columns:1fr 1.1fr;gap:60px}.stats{display:grid;grid-template-columns:1fr 1fr;gap:15px}.stat{background:#eaf0dd;border-radius:12px;padding:24px}.stat strong{font-size:40px;line-height:1.2;display:block;letter-spacing:-1px}.stat span{font-size:14px}.note{font-size:13px;color:var(--muted);margin-top:16px}.next{background:var(--green);color:white;border-radius:18px;padding:45px;display:grid;grid-template-columns:1.3fr 1fr;gap:45px}.next h2{margin-top:8px}.next p{color:#e2ebdf}.next .eyebrow{color:var(--lime)}.notice{border:1px solid #8ca68e;padding:22px;border-radius:12px;align-self:center}.notice p{font-size:14px;margin:8px 0 0}.faq{max-width:850px}details{padding:20px 0;border-bottom:1px solid var(--line)}summary{font-weight:700;cursor:pointer}details p{color:var(--muted);margin:15px 0 0}footer{border-top:1px solid var(--line);padding:35px 0;margin-top:60px;font-size:13px}.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.credits{color:var(--muted)}@media(max-width:800px){.wrap{padding:0 22px}.hero{grid-template-columns:1fr;gap:35px;padding-top:40px}h1{letter-spacing:-2px}.art{max-width:500px}.access-grid,.session-grid{grid-template-columns:1fr 1fr}.impact,.next{grid-template-columns:1fr;gap:28px}nav{gap:14px}nav .optional{display:none}.facts b{font-size:16px}.footer-grid{grid-template-columns:1fr}section.block{padding:50px 0}}@media(max-width:480px){.brand{font-size:15px}.mark{font-size:19px}nav{font-size:13px}.access-grid,.session-grid{grid-template-columns:1fr}.facts{grid-template-columns:1fr;gap:15px}.facts div{border:0;padding:0}.facts b{display:inline;margin-right:8px}.next{padding:28px}.stat{padding:18px}.stat strong{font-size:34px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{nav,.actions{display:none}.hero,.impact{grid-template-columns:1fr 1fr}section.block{padding:25px 0}.session,.stat,details{break-inside:avoid}body{background:white}.next{background:#eee;color:#19352d}.next p,.next .eyebrow{color:#19352d}}
-</style></head>
-<body><a href="#main" class="skip">Skip to content</a>
-<header><div class="wrap nav"><a class="brand" href="#" aria-label="STEM Without Barriers home"><span class="mark" aria-hidden="true">↗</span><span>STEM Without<br>Barriers</span></a><nav aria-label="Main navigation"><a href="#approach" class="optional">Our approach</a><a href="#learning">The learning journey</a><a href="#families">For families</a></nav></div></header>
-<main id="main"><div class="wrap"><section class="hero" aria-labelledby="hero-title"><div><div class="eyebrow">AI & robotics for every learner</div><h1 id="hero-title">Big ideas.<br>Curious minds.<br><em>No barriers.</em></h1><p class="intro">Hands-on STEM learning designed for deaf and hard-of-hearing children. Build robots, explore artificial intelligence and turn curiosity into something you can see, touch and create.</p><div class="actions"><a class="button" href="#learning">Explore the program <span aria-hidden="true">↗</span></a><a href="#families">Information for families</a></div><p class="small" style="margin-top:20px">Visual-first learning · Teamwork · Creative problem-solving</p></div>
-<div class="art"><span class="art-label">Built for discovery</span><svg viewBox="0 0 460 400" role="img" aria-labelledby="robot-title robot-desc"><title id="robot-title">A colourful robot ready to explore</title><desc id="robot-desc">Illustration of a green and cream robot with wheels, a colour sensor and building blocks. A dotted path connects the robot to a visual code card.</desc><ellipse cx="235" cy="344" rx="150" ry="18" fill="#d3d8c5"/><path d="M60 150H115V95H320V170H390" fill="none" stroke="#799273" stroke-width="3" stroke-dasharray="6 8"/><rect x="40" y="110" width="95" height="65" rx="14" fill="#fffdf5" transform="rotate(-8 80 140)"/><text x="61" y="150" fill="#245741" font-family="monospace" font-size="29">&lt;/&gt;</text><circle cx="367" cy="174" r="28" fill="#d6f28b"/><path d="m353 174 10 10 18-22" stroke="#245741" stroke-width="5" fill="none"/><path d="M230 130V90" stroke="#245741" stroke-width="9"/><circle cx="230" cy="80" r="13" fill="#f3a46e"/><rect x="155" y="125" width="154" height="99" rx="24" fill="#245741"/><rect x="172" y="143" width="120" height="61" rx="17" fill="#d6f28b"/><circle cx="204" cy="172" r="12" fill="#19352d"/><circle cx="260" cy="172" r="12" fill="#19352d"/><circle cx="208" cy="168" r="4" fill="white"/><circle cx="264" cy="168" r="4" fill="white"/><path d="M220 192h25" stroke="#245741" stroke-width="4" stroke-linecap="round"/><rect x="143" y="231" width="180" height="85" rx="17" fill="#fffdf5"/><rect x="170" y="248" width="73" height="43" rx="8" fill="#d6f28b"/><circle cx="279" cy="269" r="14" fill="#f3a46e"/><path d="M145 245 110 265M320 245l31 20" stroke="#245741" stroke-width="16" stroke-linecap="round"/><rect x="153" y="300" width="49" height="43" rx="13" fill="#19352d"/><rect x="264" y="300" width="49" height="43" rx="13" fill="#19352d"/><rect x="58" y="294" width="47" height="40" rx="5" fill="#f3a46e"/><rect x="66" y="285" width="13" height="11" rx="3" fill="#f3a46e"/><rect x="85" y="285" width="13" height="11" rx="3" fill="#f3a46e"/><rect x="350" y="295" width="43" height="39" rx="5" fill="#9aace0"/><path d="m350 66 4 10 11 4-11 4-4 10-4-10-11-4 11-4Z" fill="#245741"/></svg><div class="art-foot"><span>BUILD → CODE → DISCOVER</span><span>Everyone belongs.</span></div></div></section>
-<div class="facts" aria-label="Program at a glance"><div><b>Deaf & hard of hearing</b><span>Designed with visual access in mind</span></div><div><b>Ages 7–12</b><span>Age range of the 2026 program</span></div><div><b>Espoo, Finland</b><span>With AurinkoLab ry</span></div></div>
-<section id="approach" class="block"><div class="eyebrow">Different ways to learn. Equal room to grow.</div><h2>See it. Try it. Make it yours.</h2><p class="lead">The program puts visual, hands-on learning at the centre. Children explore ideas through demonstrations, picture-based instructions and building together—not through sound-dependent activities.</p><div class="access-grid"><article class="access"><span class="tag">Visual-first</span><h3>Show, then do</h3><p>Picture cards, clear demonstrations, visual agendas and timers make each activity easier to follow.</p></article><article class="access"><span class="tag">Hands-on</span><h3>Ideas you can build</h3><p>LEGO robotics, icon-based coding and practical challenges give children ways to explore and show what they know.</p></article><article class="access"><span class="tag">Together</span><h3>A role for everyone</h3><p>Children rotate through building, programming, testing, documenting and presenting, with time for visual communication.</p></article></div></section></div>
-<div class="tinted"><section id="learning" class="wrap block"><div class="eyebrow">The learning journey</div><h2>Small discoveries. Real possibilities.</h2><p class="lead">Six connected themes introduce robotics, coding and AI. Activities are adapted to the group, with opportunities to experiment, make mistakes and try again.</p><div class="session-grid"><article class="session"><span class="number">01</span><h3>Meet your robot</h3><p>Explore sensors, build a robot and use visual code to make it respond to colour.</p></article><article class="session"><span class="number">02</span><h3>Teach a machine</h3><p>Sort colourful objects and discover how an image classifier learns from examples.</p></article><article class="session"><span class="number">03</span><h3>Choose a path</h3><p>Use if/then logic to help a robot make decisions and navigate a maze.</p></article><article class="session"><span class="number">04</span><h3>Explore computer vision</h3><p>Train an image model with objects and try a find-and-deliver robot challenge.</p></article><article class="session"><span class="number">05</span><h3>Test. Measure. Improve.</h3><p>Record robot trials, change your code and use visual charts to see what improves.</p></article><article class="session"><span class="number">06</span><h3>Show what you made</h3><p>Bring your ideas together in a smart-warehouse challenge and share your creation.</p></article></div><p class="note">These are curriculum themes, not a published timetable. The 2026 delivery adapted them into week-long camp groups. Robot coding and hands-on testing sit alongside separate image-classification activities; not every robot task uses machine learning.</p></section></div>
-<section class="wrap block" aria-labelledby="impact-title"><div class="impact"><div><div class="eyebrow">Our 2026 story</div><h2 id="impact-title">A shared space<br>for discovery.</h2><p class="lead">Delivered within AurinkoLab’s LUMO summer camp in June and July 2026, STEM Without Barriers brought children together to build, code and share their ideas.</p><p class="lead">The groups included children with and without hearing loss. The grant-funded LEGO Education Computer Science & AI kit stays with AurinkoLab ry for future learning.</p></div><div><div class="stats"><div class="stat"><strong>33</strong><span>individual children aged 7–12</span></div><div class="stat"><strong>15</strong><span>participants who were hard of hearing</span></div><div class="stat"><strong>5</strong><span>week-long groups delivered</span></div><div class="stat"><strong>9.8/10</strong><span>program rating from children and parents</span></div></div><p class="note">Figures reported in the final grant report, 25 October 2026. Repeat attendance filled 40 weekly places; this is not a count of 40 individual children. The report does not state the survey response count.</p></div></div></section>
-<div class="wrap"><section id="families" class="next" aria-labelledby="family-title"><div><div class="eyebrow">For families</div><h2 id="family-title">Every curious mind<br>deserves a place.</h2><p>The program is designed for deaf and hard-of-hearing children. Families are encouraged to discuss communication preferences and access needs with the organiser before a future session.</p><a class="button light" href="https://www.instagram.com/aurinkolab.fi/" target="_blank" rel="noopener noreferrer">Visit AurinkoLab on Instagram <span aria-hidden="true">↗</span><span class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)"> (opens in a new tab)</span></a></div><div class="notice"><strong>Future sessions: details to be confirmed</strong><p>AurinkoLab ry plans to continue the program in 2026/27. Dates, fees, registration and available communication support have not been confirmed in the supplied documents. This page does not accept registrations.</p></div></section>
-<section class="block faq" aria-labelledby="faq-title"><div class="eyebrow">Good to know</div><h2 id="faq-title">Questions from families</h2><details><summary>Does my child need coding experience?</summary><p>The curriculum begins with robot building and simple visual programming, then develops toward more complex challenges. Activities can be simplified or extended for different learners.</p></details><details><summary>How does the program support deaf and hard-of-hearing learners?</summary><p>The curriculum uses visual instructions, demonstrations, picture cards, icon-based coding and visual timers. It encourages sign-language communication and allows time for visual interaction. Confirm specific language support and interpreter availability with the organiser; the documents do not guarantee these services.</p></details><details><summary>What ages is the program for?</summary><p>The original curriculum includes adaptations for ages 5–12. The completed 2026 camp served children aged 7–12. The age range for future groups is still to be confirmed.</p></details><details><summary>Is teaching delivered in English?</summary><p>This webpage is in English. The language or languages of instruction for future sessions have not been confirmed. Families should check teaching language and sign-language arrangements with the organiser.</p></details><details><summary>When and where are the next sessions?</summary><p>The 2026 program has finished. AurinkoLab ry, based in Espoo, plans to continue the program in 2026/27, but the supplied documents do not confirm a new timetable, venue address, fees or registration process.</p></details></section></div></main>
-<footer><div class="wrap footer-grid"><div><p><strong>STEM Without Barriers</strong><br>AI & Robotics for Every Learner</p><p class="credits">Program created by Maria Rohnonen, IEEE STEM Champion 2025.<br>IEEE Finland Section · AurinkoLab ry</p></div><div class="credits"><p>The 2026 program received a US$498 IEEE TryEngineering STEM Grant funded by the IEEE Signal Processing Society. The Microsoft Finland Community Fund, run by ChangeX, co-funded the equipment.</p><p>Program information is based on the supplied curriculum and final grant report dated 25 October 2026. Future plans are not confirmed bookings. Illustration is decorative, not a representation of the equipment supplied.</p></div></div></footer>
-</body></html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="STEM Without Barriers: visual-first AI and robotics. English, Finnish and Swedish." name="description"/>
+  <title>
+   STEM Without Barriers | AurinkoLab
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+  <script defer="" src="script.js">
+  </script>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   Skip to content / Siirry sisältöön / Hoppa till innehållet
+  </a>
+  <header>
+   <div class="container header-inner">
+    <a class="brand" href="#main">
+     <img alt="AurinkoLab.fi" src="assets/aurinkolab.png"/>
+     <span id="brand-title">
+      STEM Without Barriers
+     </span>
+    </a>
+    <div aria-label="Language / Kieli / Språk" class="language-switcher" role="group">
+     <button aria-label="English" aria-pressed="true" data-language="en" lang="en" type="button">
+      EN
+     </button>
+     <button aria-label="Suomi" aria-pressed="false" data-language="fi" lang="fi" type="button">
+      FI
+     </button>
+     <button aria-label="Svenska" aria-pressed="false" data-language="sv" lang="sv" type="button">
+      SV
+     </button>
+    </div>
+   </div>
+  </header>
+  <main id="main">
+   <!-- EN: editable page content -->
+   <article class="language-page" lang="en">
+    <div class="container">
+     <nav aria-label="STEM Without Barriers">
+      <a href="#sessions-en">
+       Sessions
+      </a>
+      <a href="#learning-en">
+       Learning
+      </a>
+      <a href="#register-en">
+       Pre-register
+      </a>
+     </nav>
+     <section class="hero">
+      <p class="eyebrow">
+       STEM Without Barriers
+      </p>
+      <h1>
+       You don’t have to hear well to build, code and discover.
+      </h1>
+      <p class="lead">
+       Visual-first AI and robotics, designed with deaf and hard-of-hearing children in mind. Build, experiment and learn together.
+      </p>
+      <a class="button" href="#register-en">
+       Pre-register your interest
+      </a>
+     </section>
+     <section class="schedule" id="sessions-en">
+      <p class="badge">
+       Pre-registration required
+      </p>
+      <h2>
+       The last Saturday of every month
+      </h2>
+      <p>
+       The organiser will confirm the first session date, time and venue. Pre-registration expresses interest and does not confirm a place.
+      </p>
+     </section>
+     <section class="section" id="learning-en">
+      <h2>
+       See it. Try it. Make it yours.
+      </h2>
+      <div class="feature-grid">
+       <article class="feature-card">
+        <h3>
+         Visual-first
+        </h3>
+        <p>
+         Picture cards, demonstrations, visual agendas and timers. Activities do not rely on sound.
+        </p>
+       </article>
+       <article class="feature-card">
+        <h3>
+         Hands-on
+        </h3>
+        <p>
+         LEGO building, visual coding, testing and creative problem-solving.
+        </p>
+       </article>
+       <article class="feature-card">
+        <h3>
+         Time to communicate
+        </h3>
+        <p>
+         Time for visual interaction. Confirm sign-language and interpreter arrangements with the organiser.
+        </p>
+       </article>
+      </div>
+      <h2 class="journey-title">
+       Six themes to explore
+      </h2>
+      <ol class="topic-list">
+       <li>
+        Robot senses &amp; introduction to AI
+       </li>
+       <li>
+        Pattern recognition &amp; image classification
+       </li>
+       <li>
+        If/then logic &amp; decision making
+       </li>
+       <li>
+        Computer vision
+       </li>
+       <li>
+        Test, measure &amp; improve
+       </li>
+       <li>
+        AI challenge &amp; showcase
+       </li>
+      </ol>
+     </section>
+    </div>
+    <section class="registration-section" id="register-en">
+     <div class="container">
+      <div class="registration">
+       <h2>
+        Pre-register your interest
+       </h2>
+       <p>
+        The organiser will confirm the first session date, time and venue. Pre-registration expresses interest and does not confirm a place.
+       </p>
+       <!-- Formspree receives this form only when the visitor submits it. -->
+       <form accept-charset="UTF-8" action="https://formspree.io/f/xeajgzbr" method="post">
+        <input name="website_language" type="hidden" value="en"/>
+        <input name="_subject" type="hidden" value="STEM Without Barriers — pre-registration"/>
+        <div aria-hidden="true" class="honeypot">
+         <label>
+          Leave empty
+          <input autocomplete="off" name="_gotcha" tabindex="-1"/>
+         </label>
+        </div>
+        <label for="name-en">
+         Adult contact name
+        </label>
+        <input autocomplete="name" id="name-en" maxlength="120" name="adult_name" required="" type="text"/>
+        <label for="email-en">
+         Contact email
+        </label>
+        <input autocomplete="email" id="email-en" maxlength="254" name="email" required="" type="email"/>
+        <label for="count-en">
+         Number of children interested
+        </label>
+        <input id="count-en" max="20" min="1" name="number_of_children" required="" step="1" type="number"/>
+        <label for="message-en">
+         Question or preferred month (optional)
+        </label>
+        <textarea aria-describedby="privacy-en" id="message-en" maxlength="1500" name="message"></textarea>
+        <p class="small" id="privacy-en">
+         Adult contact details only. Do not include a child’s full name, medical information or sensitive personal details. Information entered here is sent to the organiser through Formspree.
+        </p>
+        <label class="consent">
+         <input name="contact_consent" required="" type="checkbox" value="yes"/>
+         <span>
+          I agree that the organiser may use my contact details to respond to this request.
+         </span>
+        </label>
+        <button class="button" type="submit">
+         Send pre-registration
+        </button>
+       </form>
+      </div>
+     </div>
+    </section>
+    <div class="container">
+     <section class="section">
+      <details>
+       <summary>
+        Original 2026 plan · archive
+       </summary>
+       <ul>
+        <li>
+         Group 1: April–May 2026
+        </li>
+        <li>
+         Groups 2–3: June–October 2026
+        </li>
+        <li>
+         Group 4: October–November 2026
+        </li>
+       </ul>
+       <p class="small">
+        Original planning periods, not dates for current enrolment. Completed camp groups: 1–5, 8–12 and 15–19 June; 20–24 and 27–31 July 2026.
+       </p>
+      </details>
+     </section>
+     <section class="section">
+      <h2>
+       Partners &amp; supporters
+      </h2>
+      <!-- Transparent partner logos; original aspect ratios are preserved. -->
+      <div class="partner-logos">
+       <div class="logo-slot">
+        <img alt="AurinkoLab.fi" class="logo-aurinkolab" height="580" loading="lazy" src="assets/aurinkolab.png" width="470"/>
+       </div>
+       <div class="logo-slot">
+        <img alt="Powered by IEEE TryEngineering — IEEE STEM Grant" class="logo-ieee" loading="lazy" src="assets/ieee-tryengineering.png"/>
+       </div>
+       <div class="logo-slot">
+        <img alt="ChangeX" class="logo-changex" height="32" loading="lazy" src="assets/changex.png" width="132"/>
+       </div>
+      </div>
+      <!-- <p>
+       The 2026 program received a US$498 IEEE TryEngineering STEM Grant funded by the IEEE Signal Processing Society. The Microsoft Finland Community Fund, run by ChangeX, co-funded the equipment.
+      </p> -->
+      <a href="https://www.instagram.com/aurinkolab.fi/">
+       AurinkoLab · Instagram
+      </a>
+     </section>
+     <footer>
+      <p>
+       Program created by Maria Rohnonen, IEEE STEM Champion 2025 · IEEE Finland Section · AurinkoLab ry
+      </p>
+      <p>
+       Program content: supplied curriculum, letter of support and final report (25 October 2026). Monthly schedule supplied by the organiser. Website languages do not confirm teaching languages.
+      </p>
+     </footer>
+    </div>
+   </article>
+   <!-- FI: editable page content -->
+   <article class="language-page" hidden="" lang="fi">
+    <div class="container">
+     <nav aria-label="STEM ilman esteitä">
+      <a href="#sessions-fi">
+       Ajankohdat
+      </a>
+      <a href="#learning-fi">
+       Oppiminen
+      </a>
+      <a href="#register-fi">
+       Ennakkoilmoittautuminen
+      </a>
+     </nav>
+     <section class="hero">
+      <p class="eyebrow">
+       STEM ilman esteitä
+      </p>
+      <h1>
+       Ei tarvitse kuulla hyvin voidakseen rakentaa, ohjelmoida ja oivaltaa.
+      </h1>
+      <p class="lead">
+       Visuaalista tekoäly- ja robotiikkaoppimista kuurojen ja huonokuuloisten lasten tarpeet huomioiden. Rakennetaan, kokeillaan ja opitaan yhdessä.
+      </p>
+      <a class="button" href="#register-fi">
+       Ilmoita kiinnostuksestasi
+      </a>
+     </section>
+     <section class="schedule" id="sessions-fi">
+      <p class="badge">
+       Ennakkoilmoittautuminen vaaditaan
+      </p>
+      <h2>
+       Joka kuukauden viimeisenä lauantaina
+      </h2>
+      <p>
+       Järjestäjä vahvistaa ensimmäisen kerran päivämäärän, kellonajan ja paikan. Ennakkoilmoittautuminen kertoo kiinnostuksesta eikä vahvista osallistumispaikkaa.
+      </p>
+     </section>
+     <section class="section" id="learning-fi">
+      <h2>
+       Katso. Kokeile. Tee siitä omasi.
+      </h2>
+      <div class="feature-grid">
+       <article class="feature-card">
+        <h3>
+         Visuaalisesti
+        </h3>
+        <p>
+         Kuvakortteja, esimerkkejä, kuvallisia päiväohjelmia ja visuaalisia ajastimia. Toiminta ei edellytä äänen kuulemista.
+        </p>
+       </article>
+       <article class="feature-card">
+        <h3>
+         Tekemällä
+        </h3>
+        <p>
+         LEGO-rakentelua, visuaalista ohjelmointia, testausta ja luovaa ongelmanratkaisua.
+        </p>
+       </article>
+       <article class="feature-card">
+        <h3>
+         Aikaa viestintään
+        </h3>
+        <p>
+         Aikaa visuaaliselle vuorovaikutukselle. Varmista viittomakieli- ja tulkkausjärjestelyt järjestäjältä.
+        </p>
+       </article>
+      </div>
+      <h2 class="journey-title">
+       Kuusi tutkittavaa teemaa
+      </h2>
+      <ol class="topic-list">
+       <li>
+        Robotin anturit ja tekoälyn perusteet
+       </li>
+       <li>
+        Hahmontunnistus ja kuvaluokittelu
+       </li>
+       <li>
+        Jos–niin-logiikka ja päätöksenteko
+       </li>
+       <li>
+        Konenäkö
+       </li>
+       <li>
+        Testaa, mittaa ja paranna
+       </li>
+       <li>
+        Tekoälyhaaste ja esittely
+       </li>
+      </ol>
+     </section>
+    </div>
+    <section class="registration-section" id="register-fi">
+     <div class="container">
+      <div class="registration">
+       <h2>
+        Ilmoita kiinnostuksestasi
+       </h2>
+       <p>
+        Järjestäjä vahvistaa ensimmäisen kerran päivämäärän, kellonajan ja paikan. Ennakkoilmoittautuminen kertoo kiinnostuksesta eikä vahvista osallistumispaikkaa.
+       </p>
+       <!-- Formspree receives this form only when the visitor submits it. -->
+       <form accept-charset="UTF-8" action="https://formspree.io/f/xeajgzbr" method="post">
+        <input name="website_language" type="hidden" value="fi"/>
+        <input name="_subject" type="hidden" value="STEM Without Barriers — pre-registration"/>
+        <div aria-hidden="true" class="honeypot">
+         <label>
+          Leave empty
+          <input autocomplete="off" name="_gotcha" tabindex="-1"/>
+         </label>
+        </div>
+        <label for="name-fi">
+         Aikuisen yhteyshenkilön nimi
+        </label>
+        <input autocomplete="name" id="name-fi" maxlength="120" name="adult_name" required="" type="text"/>
+        <label for="email-fi">
+         Yhteyssähköposti
+        </label>
+        <input autocomplete="email" id="email-fi" maxlength="254" name="email" required="" type="email"/>
+        <label for="count-fi">
+         Kiinnostuneiden lasten määrä
+        </label>
+        <input id="count-fi" max="20" min="1" name="number_of_children" required="" step="1" type="number"/>
+        <label for="message-fi">
+         Kysymys tai toivottu kuukausi (vapaaehtoinen)
+        </label>
+        <textarea aria-describedby="privacy-fi" id="message-fi" maxlength="1500" name="message"></textarea>
+        <p class="small" id="privacy-fi">
+         Anna vain aikuisen yhteystiedot. Älä ilmoita lapsen koko nimeä, terveystietoja tai muita arkaluonteisia henkilötietoja. Tiedot lähetetään järjestäjälle Formspree-palvelun kautta.
+        </p>
+        <label class="consent">
+         <input name="contact_consent" required="" type="checkbox" value="yes"/>
+         <span>
+          Hyväksyn, että järjestäjä käyttää yhteystietojani vastatakseen tähän pyyntöön.
+         </span>
+        </label>
+        <button class="button" type="submit">
+         Lähetä ennakkoilmoittautuminen
+        </button>
+       </form>
+      </div>
+     </div>
+    </section>
+    <div class="container">
+     <section class="section">
+      <details>
+       <summary>
+        Alkuperäinen suunnitelma 2026 · arkisto
+       </summary>
+       <ul>
+        <li>
+         Ryhmä 1: huhti–toukokuu 2026
+        </li>
+        <li>
+         Ryhmät 2–3: kesä–lokakuu 2026
+        </li>
+        <li>
+         Ryhmä 4: loka–marraskuu 2026
+        </li>
+       </ul>
+       <p class="small">
+        Alkuperäiset suunnittelujaksot, eivät nykyisen ilmoittautumisen ajankohdat. Toteutuneet leirit: 1.–5.6., 8.–12.6., 15.–19.6., 20.–24.7. ja 27.–31.7.2026.
+       </p>
+      </details>
+     </section>
+     <section class="section">
+      <h2>
+       Yhteistyökumppanit ja tukijat
+      </h2>
+      <!-- Transparent partner logos; original aspect ratios are preserved. -->
+      <div class="partner-logos">
+       <div class="logo-slot">
+        <img alt="AurinkoLab.fi" class="logo-aurinkolab" height="580" loading="lazy" src="assets/aurinkolab.png" width="470"/>
+       </div>
+       <div class="logo-slot">
+        <img alt="Powered by IEEE TryEngineering — IEEE STEM Grant" class="logo-ieee" loading="lazy" src="assets/ieee-tryengineering.png"/>
+       </div>
+       <div class="logo-slot">
+        <img alt="ChangeX" class="logo-changex" height="32" loading="lazy" src="assets/changex.png" width="132"/>
+       </div>
+      </div>
+      <!-- <p>
+       Vuoden 2026 ohjelma sai 498 Yhdysvaltain dollarin IEEE TryEngineering STEM Grant -apurahan, jonka rahoitti IEEE Signal Processing Society. ChangeX:n hallinnoima Microsoft Finland Community Fund osallistui laitteiston rahoitukseen.
+      </p> -->
+      <a href="https://www.instagram.com/aurinkolab.fi/">
+       AurinkoLab · Instagram
+      </a>
+     </section>
+     <footer>
+      <p>
+       Ohjelman on luonut Maria Rohnonen, IEEE STEM Champion 2025 · IEEE Finland Section · AurinkoLab ry
+      </p>
+      <p>
+       Ohjelman sisältö: toimitettu opetussuunnitelma, tukikirje ja loppuraportti (25.10.2026). Kuukausiaikataulu: järjestäjän antamat tiedot. Sivuston kielet eivät ole vahvistettuja opetuskieliä.
+      </p>
+     </footer>
+    </div>
+   </article>
+   <!-- SV: editable page content -->
+   <article class="language-page" hidden="" lang="sv">
+    <div class="container">
+     <nav aria-label="STEM utan barriärer">
+      <a href="#sessions-sv">
+       Träffar
+      </a>
+      <a href="#learning-sv">
+       Lärande
+      </a>
+      <a href="#register-sv">
+       Föranmälan
+      </a>
+     </nav>
+     <section class="hero">
+      <p class="eyebrow">
+       STEM utan barriärer
+      </p>
+      <h1>
+       Du behöver inte höra bra för att bygga, programmera och upptäcka.
+      </h1>
+      <p class="lead">
+       Visuellt lärande inom AI och robotik, utformat med döva barns och hörselnedsatta barns behov i åtanke. Bygg, experimentera och lär tillsammans.
+      </p>
+      <a class="button" href="#register-sv">
+       Gör en intresseanmälan
+      </a>
+     </section>
+     <section class="schedule" id="sessions-sv">
+      <p class="badge">
+       Föranmälan krävs
+      </p>
+      <h2>
+       Den sista lördagen varje månad
+      </h2>
+      <p>
+       Arrangören bekräftar datum för den första träffen, klockslag och plats. Föranmälan visar intresse och bekräftar inte en plats.
+      </p>
+     </section>
+     <section class="section" id="learning-sv">
+      <h2>
+       Se. Prova. Gör det till ditt.
+      </h2>
+      <div class="feature-grid">
+       <article class="feature-card">
+        <h3>
+         Visuellt
+        </h3>
+        <p>
+         Bildkort, demonstrationer, visuella scheman och tidshjälpmedel. Aktiviteterna är inte beroende av ljud.
+        </p>
+       </article>
+       <article class="feature-card">
+        <h3>
+         Praktiskt
+        </h3>
+        <p>
+         LEGO-byggande, visuell programmering, tester och kreativ problemlösning.
+        </p>
+       </article>
+       <article class="feature-card">
+        <h3>
+         Tid att kommunicera
+        </h3>
+        <p>
+         Tid för visuell interaktion. Bekräfta teckenspråks- och tolkarrangemang med arrangören.
+        </p>
+       </article>
+      </div>
+      <h2 class="journey-title">
+       Sex teman att utforska
+      </h2>
+      <ol class="topic-list">
+       <li>
+        Robotens sensorer och introduktion till AI
+       </li>
+       <li>
+        Mönsterigenkänning och bildklassificering
+       </li>
+       <li>
+        Om–så-logik och beslutsfattande
+       </li>
+       <li>
+        Datorseende
+       </li>
+       <li>
+        Testa, mät och förbättra
+       </li>
+       <li>
+        AI-utmaning och presentation
+       </li>
+      </ol>
+     </section>
+    </div>
+    <section class="registration-section" id="register-sv">
+     <div class="container">
+      <div class="registration">
+       <h2>
+        Gör en intresseanmälan
+       </h2>
+       <p>
+        Arrangören bekräftar datum för den första träffen, klockslag och plats. Föranmälan visar intresse och bekräftar inte en plats.
+       </p>
+       <!-- Formspree receives this form only when the visitor submits it. -->
+       <form accept-charset="UTF-8" action="https://formspree.io/f/xeajgzbr" method="post">
+        <input name="website_language" type="hidden" value="sv"/>
+        <input name="_subject" type="hidden" value="STEM Without Barriers — pre-registration"/>
+        <div aria-hidden="true" class="honeypot">
+         <label>
+          Leave empty
+          <input autocomplete="off" name="_gotcha" tabindex="-1"/>
+         </label>
+        </div>
+        <label for="name-sv">
+         Namn på vuxen kontaktperson
+        </label>
+        <input autocomplete="name" id="name-sv" maxlength="120" name="adult_name" required="" type="text"/>
+        <label for="email-sv">
+         Kontaktmejl
+        </label>
+        <input autocomplete="email" id="email-sv" maxlength="254" name="email" required="" type="email"/>
+        <label for="count-sv">
+         Antal intresserade barn
+        </label>
+        <input id="count-sv" max="20" min="1" name="number_of_children" required="" step="1" type="number"/>
+        <label for="message-sv">
+         Fråga eller önskad månad (frivilligt)
+        </label>
+        <textarea aria-describedby="privacy-sv" id="message-sv" maxlength="1500" name="message"></textarea>
+        <p class="small" id="privacy-sv">
+         Ange endast en vuxens kontaktuppgifter. Ange inte barnets fullständiga namn, hälsouppgifter eller andra känsliga personuppgifter. Uppgifterna skickas till arrangören via Formspree.
+        </p>
+        <label class="consent">
+         <input name="contact_consent" required="" type="checkbox" value="yes"/>
+         <span>
+          Jag godkänner att arrangören använder mina kontaktuppgifter för att besvara denna förfrågan.
+         </span>
+        </label>
+        <button class="button" type="submit">
+         Skicka föranmälan
+        </button>
+       </form>
+      </div>
+     </div>
+    </section>
+    <div class="container">
+     <section class="section">
+      <details>
+       <summary>
+        Ursprunglig plan 2026 · arkiv
+       </summary>
+       <ul>
+        <li>
+         Grupp 1: april–maj 2026
+        </li>
+        <li>
+         Grupperna 2–3: juni–oktober 2026
+        </li>
+        <li>
+         Grupp 4: oktober–november 2026
+        </li>
+       </ul>
+       <p class="small">
+        Ursprungliga planeringsperioder, inte datum för aktuell anmälan. Genomförda läger: 1–5, 8–12 och 15–19 juni samt 20–24 och 27–31 juli 2026.
+       </p>
+      </details>
+     </section>
+     <section class="section">
+      <h2>
+       Partner och stödgivare
+      </h2>
+      <!-- Transparent partner logos; original aspect ratios are preserved. -->
+      <div class="partner-logos">
+       <div class="logo-slot">
+        <img alt="AurinkoLab.fi" class="logo-aurinkolab" height="580" loading="lazy" src="assets/aurinkolab.png" width="470"/>
+       </div>
+       <div class="logo-slot">
+        <img alt="Powered by IEEE TryEngineering — IEEE STEM Grant" class="logo-ieee" loading="lazy" src="assets/ieee-tryengineering.png"/>
+       </div>
+       <div class="logo-slot">
+        <img alt="ChangeX" class="logo-changex" height="32" loading="lazy" src="assets/changex.png" width="132"/>
+       </div>
+      </div>
+      <!-- <p>
+       Programmet 2026 fick ett IEEE TryEngineering STEM Grant på 498 US-dollar, finansierat av IEEE Signal Processing Society. Microsoft Finland Community Fund, som administreras av ChangeX, medfinansierade utrustningen.
+      </p> -->
+      <a href="https://www.instagram.com/aurinkolab.fi/">
+       AurinkoLab · Instagram
+      </a>
+     </section>
+     <footer>
+      <p>
+       Programmet skapades av Maria Rohnonen, IEEE STEM Champion 2025 · IEEE Finland Section · AurinkoLab ry
+      </p>
+      <p>
+       Programinnehåll: tillhandahållen läroplan, stödbrev och slutrapport (25 oktober 2026). Månadsschema: uppgifter från arrangören. Webbplatsens språk är inte bekräftade undervisningsspråk.
+      </p>
+     </footer>
+    </div>
+   </article>
+  </main>
+ </body>
+</html>
